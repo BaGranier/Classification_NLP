@@ -2,39 +2,6 @@
 
 Ce dépôt propose un exercice ouvert de traitement du langage naturel (NLP), à partir d'un problème fictif sur les publications de la HAS.
 
-## Description des données 
-
-Une requête rest permet d'interroger le site de la HAS pour récupérer les avis sous la forme de xml.
-Chacune des pages renvoyées contient un champ `resume` avec du texte : 
-
-```
-https://www.has-sante.fr/rest/search?
-text=&
-mode=all&
-searchedAllFields=true
-&catName=true&exactCat=false&catMode=and&
-cids=&dateType=cdate&
-dateSince=0&dateSince_user=0&
-dateSince_unit=1&beginDateStr=&endDateStr=&
-exactType=false&replaceFileDoc=false&
-types=generated.EvaluationDesTechnologiesDeSante&
-types=generated.GuideMedecinALD&types=generated.GuidePatient&
-types=generated.EvaluationDesPratiques&
-types=generated.RecommandationsProfessionnelles&
-types=generated.EvaluationDesProgrammesEtPolitiq&
-types=generated.RecommandationVaccinale&
-mids=&midsChooserDisplay=&
-mids=&gidsChooserDisplay=&
-gids=&pstatus=0&
-pstatus=&
-pstatus=&
-langs=&wrkspcChooserDisplay=&
-wrkspc=&searchInSubWorkspaces=false&
-wrkspc=&
-start=0&pageSize=2
-&sort=pdate&reverse=true
-```
-
 ## Problématique métier (FICTIVE !)
 
 Les publications de la HAS sont catégorisées selon divers thématiques, pour permettre la navigation sur le site internet.
@@ -74,6 +41,8 @@ On s'interessera en particulier à catégoriser les documents des types suivants
 - Avis sur les Médicaments
 - Avis sur les dispositifs médicaux et autres produits de santé
 - Synthèse d'avis et Fiche bon usage
+
+Pour effectuer la classification, on s'interrera en priorité au résumé htlm des publications, disponible dans le champ `resume` (ou parfois `objectifs`), plutôt qu'aux documents pdf joints (ce qui nécessiterait plus de travail).
 
 ### Accès API
 
@@ -134,6 +103,8 @@ r = requests.get("https://www.has-sante.fr/rest/data/RecommandationVaccinale",
                  headers={"accept": "application/json"})
 r.json()
 ```
+
+
 
 ## Exercice
 
