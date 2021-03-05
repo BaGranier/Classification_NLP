@@ -32,17 +32,19 @@ On peut également retrouver ces informations par API  `https://www.has-sante.fr
 
 On s'interessera en particulier à catégoriser les documents des types suivants
 
-- Evaluation des technologies de santé
 - Recommandation de bonne pratique
 - Guide maladie chronique
+- Guide méthodologique
+- Outil d'amélioration des pratiques professionnelles
 - Recommandation en santé publique
+- Études et Rapports
 - Guide usagers
 - Recommandation vaccinale
 - Avis sur les Médicaments
 - Avis sur les dispositifs médicaux et autres produits de santé
-- Synthèse d'avis et Fiche bon usage
+- Evaluation des technologies de santé
 
-Pour effectuer la classification, on s'interrera en priorité au résumé htlm des publications, disponible dans le champ `resume` (ou parfois `objectifs`), plutôt qu'aux documents pdf joints (ce qui nécessiterait plus de travail).
+Pour effectuer la classification, on s'intéressera en priorité au résumé html des publications, disponible dans le champ `resume` (ou parfois `objectifs`), plutôt qu'aux documents pdf joints (ce qui nécessiterait plus de travail).
 
 ### Accès API
 
@@ -87,7 +89,7 @@ On peut effectuer une recherche avec les paramètres suivants
 - `types` : liste de types pour préciser la recherche
 - et autres à [tester dans cette requête](https://www.has-sante.fr/rest/search?text=&mode=all&searchedAllFields=true&catName=true&exactCat=false&catMode=and&cids=&dateType=cdate&dateSince=0&dateSince_user=0&dateSince_unit=1&beginDateStr=&endDateStr=&exactType=false&replaceFileDoc=false&types=generated.EvaluationDesTechnologiesDeSante&types=generated.GuideMedecinALD&mids=&midsChooserDisplay=&mids=&gidsChooserDisplay=&gids=&pstatus=0&pstatus=&pstatus=&langs=&wrkspcChooserDisplay=&wrkspc=&searchInSubWorkspaces=false&wrkspc=)
 
-### Résultatas en json
+### Résulttas en json
 
 Par défaut, l'API envoie une réponse au format XML.
 
