@@ -1,5 +1,3 @@
-{::options parse_block_html="true" /}
-
 # Exercice NLP
 
 Ce dépôt propose un exercice ouvert de traitement du langage naturel (NLP), à partir d'un problème fictif sur les publications de la HAS.
@@ -12,12 +10,11 @@ Les publications de la HAS sont catégorisées selon divers thématiques, pour p
 
 Cette catégorisation prend beaucoup de temps aux documentalistes, qui aimeraient automatiser cette tache, en particulier pour les catégorie de la thématique `Maladies et états de santé` qui sont les plus difficiles.
 
-L'équipe data a proposé d'étudier une fonctionnalité d'assistance à la catégorisation, qui serait intégré à l'interface d'administration du site.
-{: .alert .alert-info}
+🚀 L'équipe data a proposé d'étudier une fonctionnalité d'assistance à la catégorisation, qui serait intégré à l'interface d'administration du site.
 
 ## Données
 
-## Thématiques
+### Thématiques
 
 Les thématiques sont décrites dans le document `documentation/categories_thematiques.xlsx`
 
@@ -33,7 +30,7 @@ Ce document donne également le nom interne (technique) d'un type.
 On peut également retrouver ces informations par API  `https://www.has-sante.fr/rest/types` (cf section dédiée plus bas).
 
 
-On s'interessera en particulier à catégoriser les documents des types suivants
+On s'interessera en particulier à catégoriser les documents des types suivants :
 
 - Evaluation des technologies de santé
 - Recommandation de bonne pratique
@@ -45,7 +42,7 @@ On s'interessera en particulier à catégoriser les documents des types suivants
 - Avis sur les dispositifs médicaux et autres produits de santé
 - Synthèse d'avis et Fiche bon usage
 
-Pour effectuer la classification, on s'interrera en priorité au résumé htlm des publications, disponible dans le champ `resume` (ou parfois `objectifs`), plutôt qu'aux documents pdf joints (ce qui nécessiterait plus de travail).
+Pour effectuer la classification, on s'interessera en priorité au résumé htlm des publications, disponible dans le champ `resume` (ou parfois `objectifs`), plutôt qu'aux documents pdf joints (ce qui nécessiterait plus de travail).
 
 ### Accès API
 
@@ -63,12 +60,10 @@ Le principal point d'API utile dans l'exercice est
 - récupérer l'ensemble des objets d'un type particulier, si le paramètre est un type de données (https://www.has-sante.fr/rest/data/RecommandationVaccinale)
 
 
-Autres points d'API a priori inutiles pour l'exercice
+Autres points d'API a priori inutiles pour l'exercice :
 
-`https://www.has-sante.fr/rest/search` permet d'effectuer une recherche avec des paramètres
-
-
-On peut télécharger les documents et images référencés dans les objets, en ajoutant l'url du site devant. 
+- `https://www.has-sante.fr/rest/search` permet d'effectuer une recherche avec des paramètres
+- On peut télécharger les documents et images référencés dans les objets, en ajoutant l'url du site devant. 
 Par exemple https://www.has-sante.fr/upload/docs/application/pdf/2021-03/strategie_de_vaccination_contre_le_sars-cov-2__extension_des_competences_vaccinales_des_professionnels_de_sante.pdf
 
 #### Paramètres d'API
@@ -90,7 +85,7 @@ On peut effectuer une recherche avec les paramètres suivants
 - `types` : liste de types pour préciser la recherche
 - et autres à [tester dans cette requête](https://www.has-sante.fr/rest/search?text=&mode=all&searchedAllFields=true&catName=true&exactCat=false&catMode=and&cids=&dateType=cdate&dateSince=0&dateSince_user=0&dateSince_unit=1&beginDateStr=&endDateStr=&exactType=false&replaceFileDoc=false&types=generated.EvaluationDesTechnologiesDeSante&types=generated.GuideMedecinALD&mids=&midsChooserDisplay=&mids=&gidsChooserDisplay=&gids=&pstatus=0&pstatus=&pstatus=&langs=&wrkspcChooserDisplay=&wrkspc=&searchInSubWorkspaces=false&wrkspc=)
 
-### Résultatas en json
+### Résultats en json
 
 Par défaut, l'API envoie une réponse au format XML.
 
@@ -106,7 +101,6 @@ r = requests.get("https://www.has-sante.fr/rest/data/RecommandationVaccinale",
                  headers={"accept": "application/json"})
 r.json()
 ```
-
 
 
 ## Exercice
