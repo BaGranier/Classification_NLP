@@ -15,7 +15,7 @@ Ce document donne également le nom interne (technique) d'un type.
 
 On peut également retrouver ces informations par API  `https://www.has-sante.fr/rest/types`.
 
-On s'interessera en particulier à catégoriser les documents des types suivants
+On s'interessera en particulier à catégoriser les documents des types suivants :
 - Recommandation de bonne pratique
 - Guide maladie chronique
 - Guide méthodologique
@@ -47,14 +47,15 @@ Le principal point d'API utile dans l'exercice est
 - récupérer l'ensemble des objets d'un type particulier, si le paramètre est un type de données (https://www.has-sante.fr/rest/data/RecommandationVaccinale)
 
 
-D'autres points d'API existent, dont certain décrit plus haut.
+D'autres points d'API existent, dont certain décrit plus haut, et d'autres a priori inutiles à l'exercices.
 
-Il est en particulier possible de chercher et télécharger des contenus, ce qui est a priori inutiles pour l'exercice :
+On pointer vers une page web ou un document sur le site de la HAS à partir de l'identifiant d'un objet `https://has-sante.fr/jcms/{id}`.
 
-`https://www.has-sante.fr/rest/search` permet d'effectuer une recherche avec des paramètres
+Exemples 
+- https://has-sante.fr/jcms/p_3240117
+- https://has-sante.fr/jcms/p_3240130
 
-Sans être un point d'API, on peut télécharger les documents et images référencés dans les objets, en ajoutant l'url du site devant. 
-Par exemple https://www.has-sante.fr/upload/docs/application/pdf/2021-03/strategie_de_vaccination_contre_le_sars-cov-2__extension_des_competences_vaccinales_des_professionnels_de_sante.pdf
+`https://www.has-sante.fr/rest/search` permet d'effectuer une recherche avec des paramètres.
 
 ### Paramètres d'API
 
@@ -75,7 +76,7 @@ On peut effectuer une recherche avec les paramètres suivants
 - `types` : liste de types pour préciser la recherche
 - et autres [illustrés dans cette requête](https://www.has-sante.fr/rest/search?text=&mode=all&searchedAllFields=true&catName=true&exactCat=false&catMode=and&cids=&dateType=cdate&dateSince=0&dateSince_user=0&dateSince_unit=1&beginDateStr=&endDateStr=&exactType=false&replaceFileDoc=false&types=generated.EvaluationDesTechnologiesDeSante&types=generated.GuideMedecinALD&mids=&midsChooserDisplay=&mids=&gidsChooserDisplay=&gids=&pstatus=0&pstatus=&pstatus=&langs=&wrkspcChooserDisplay=&wrkspc=&searchInSubWorkspaces=false&wrkspc=)
 
-### Résulttas en json
+### Résultas en json
 
 Par défaut, l'API envoie une réponse au format XML.
 
