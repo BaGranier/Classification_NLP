@@ -73,7 +73,9 @@ Exemple : https://www.has-sante.fr/rest/data/RecommandationVaccinale?start=0&pag
 
 On peut effectuer une recherche avec les paramètres suivants
 - `text` : texte de recherche 
-- `types` : liste de types pour préciser la recherche
+- `types` : type de contenu pour préciser la recherche (paramètre peut être répété)
+- `cids` : catégorie pour préciser la recherche (paramètre peut être répété)
+- `catMode` : comment combiner les filtres sur les catégories (`and`, `or`)
 - et autres [illustrés dans cette requête](https://www.has-sante.fr/rest/search?text=&mode=all&searchedAllFields=true&catName=true&exactCat=false&catMode=and&cids=&dateType=cdate&dateSince=0&dateSince_user=0&dateSince_unit=1&beginDateStr=&endDateStr=&exactType=false&replaceFileDoc=false&types=generated.EvaluationDesTechnologiesDeSante&types=generated.GuideMedecinALD&mids=&midsChooserDisplay=&mids=&gidsChooserDisplay=&gids=&pstatus=0&pstatus=&pstatus=&langs=&wrkspcChooserDisplay=&wrkspc=&searchInSubWorkspaces=false&wrkspc=)
 
 ### Résultas en json
