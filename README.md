@@ -6,8 +6,6 @@ Ce dépôt propose un exercice ouvert de traitement du langage naturel (NLP), à
 
 Les publications de la HAS sont catégorisées selon divers thématiques, pour permettre la navigation sur le site internet.
 
-![](images/thematiques_site_has.PNG)
-
 Cette catégorisation prend beaucoup de temps aux documentalistes, qui aimeraient automatiser cette tache, en particulier pour les catégorie de la thématique `Maladies et états de santé` qui sont les plus difficiles.
 
 L'équipe data a proposé d'étudier une fonctionnalité d'assistance à la catégorisation, qui serait intégré à l'interface d'administration du site.
