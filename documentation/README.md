@@ -37,14 +37,14 @@ Pour effectuer la classification, on s'intéressera en priorité au résumé htm
 
 ## Accès API
 
-Il est possible d'interroger le backend Jalios par une API, décrite de façon générique dans [ce document](https://community.jalios.com/jcms/jx_59631/fr/services-web-restful-avec-jcms-open-api.
+Il est possible d'interroger le backend Jalios par une API, décrite de façon générique dans [ce document](https://community.jalios.com/jcms/jx_59631/fr/services-web-restful-avec-jcms-open-api).
 
 ### Points d'API
 
 Le principal point d'API utile dans l'exercice est 
-`https://www.has-sante.fr/rest/data/{param}`, qui permet de 
-- récupérer un objet si le paramètre est un identifiant (https://has-sante.fr/rest/data/p_3240117)
-- récupérer l'ensemble des objets d'un type particulier, si le paramètre est un type de données (https://www.has-sante.fr/rest/data/RecommandationVaccinale)
+`https://www.has-sante.fr/rest/data/{param}`, qui permet de :
+- récupérer un objet si le paramètre est un identifiant (exemple https://has-sante.fr/rest/data/p_3240117)
+- récupérer l'ensemble des objets d'un type particulier, si le paramètre est un type de données (exemple https://www.has-sante.fr/rest/data/RecommandationVaccinale)
 
 
 D'autres points d'API existent, dont certain décrit plus haut, et d'autres a priori inutiles à l'exercices.
