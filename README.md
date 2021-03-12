@@ -25,7 +25,7 @@ Différentes étapes pourront être développées :
 
 Une documentation sur les données et catégorie est disponible dans le dossier `documentation`.
 
-L'exercice sera développé sur un fork de ce dépôt.
+L'exercice sera développé sur un clone personnel de ce dépôt.
 
 - Les documents descriptifs seront rédigé au format Markdown.
 - Le principal langage à utiliser est Python pour le traitement de données. Les codes seront versionnés dans le dépôt (librairie `.py` et/ou notebook `.ipynb`).
