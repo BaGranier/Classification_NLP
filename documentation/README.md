@@ -76,7 +76,24 @@ On peut effectuer une recherche avec les paramètres suivants
 - `types` : type de contenu pour préciser la recherche (paramètre peut être répété)
 - `cids` : catégorie pour préciser la recherche (paramètre peut être répété)
 - `catMode` : comment combiner les filtres sur les catégories (`and`, `or`)
+- `langs` : filtre par langue, avec paramètres `fr` et/ou `en`
 - et autres [illustrés dans cette requête](https://www.has-sante.fr/rest/search?text=&mode=all&searchedAllFields=true&catName=true&exactCat=false&catMode=and&cids=&dateType=cdate&dateSince=0&dateSince_user=0&dateSince_unit=1&beginDateStr=&endDateStr=&exactType=false&replaceFileDoc=false&types=generated.EvaluationDesTechnologiesDeSante&types=generated.GuideMedecinALD&mids=&midsChooserDisplay=&mids=&gidsChooserDisplay=&gids=&pstatus=0&pstatus=&pstatus=&langs=&wrkspcChooserDisplay=&wrkspc=&searchInSubWorkspaces=false&wrkspc=)
+
+#### Paramètre date
+
+Pour filtrer sur les dates, on choisi le type de date
+- `dateType` : Type de date sur lequel filtré, parmi les valeurs suivantes
+  - Créé : `cdate`
+  - Modifié : `mdate`
+  - Mis-à-jour (modification majeure) : `udate`
+  - Publié : `pdate`
+  - Expiré : `edate`
+
+Puis on applique des filtres (combinaison logique ET)
+- `dateSince` : Nombre de jours. Filtre sur les documents plus récents que ce nombre de jours dans le passé par rapport à aujourd'hui
+- `beginDateStr` : Filtre sur les documents ultérieurs à cette date, passée sous la forme d'une chaîne de caractère encodée. Le 3 mai 2021 est écrit 03/05/2021, et codé `03%2F05%2F2021`
+- `beginDateStr` : Filtre sur les documents antérieurs à cette date. Codé de la même façon que `beginDateStr`
+
 
 ### Résultas en json
 
