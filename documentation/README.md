@@ -95,7 +95,7 @@ Puis on applique des filtres (combinaison logique ET)
 - `beginDateStr` : Filtre sur les documents antérieurs à cette date. Codé de la même façon que `beginDateStr`
 
 
-### Résultas en json
+### Résultats en json
 
 Par défaut, l'API envoie une réponse au format XML.
 
