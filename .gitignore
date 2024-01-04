@@ -2,7 +2,7 @@
 data/csv
 data/json
 data/xlsx
-test.py
+solution.py
 .python-version
 poetry.lock
 pyproject.toml

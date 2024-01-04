@@ -1,6 +1,6 @@
 # Données
 
-Les données utilisées dans l'exercice sont les métadonnées des publications du site de la HAS. Elles sont documentés extensivement sur datagouv.fr : https://www.data.gouv.fr/fr/datasets/metadonnees-des-publications-de-la-has/. Le fichier zip `data/has-publications-single.zip` téléchargé depuis cette url contient les données utilisées dans cet exercice. Il est conseillé d'utiliser le fichier `AllPublications.json`.
+Les données utilisées dans l'exercice sont les métadonnées des publications du site de la HAS. Elles sont documentés extensivement sur datagouv.fr : https://www.data.gouv.fr/fr/datasets/metadonnees-des-publications-de-la-has/. Le fichier zip `data/has-publications-single.zip` téléchargé depuis cette url contient les données utilisées dans cet exercice. Il est conseillé d'utiliser le fichier `AllPublications.json` (quitte à tout de suite recaster le json en dataframe) qui parse mieux les champs nestés que la version csv.
 
 Note: Ces données ont été extraites grâce à l'API de la HAS, documentée dans `documentation/documentation_api.md`. **Il n'est pas nécessaire de comprendre le fonctionnement de l'API pour cet exercice.**
 
@@ -30,4 +30,4 @@ On s'interessera en particulier à catégoriser les documents des types suivants
 
 ## Contenus
 
-Pour effectuer la classification, on s'intéressera en priorité au résumé markdown ou html des publications, disponible dans le champ `resume` (ou parfois `objectifs`), plutôt qu'aux documents pdf joints (ce qui nécessiterait plus de travail).
+Pour effectuer la classification, on s'intéressera en priorité au résumé markdown ou html des publications ainsi qu'au titre de la publication (disponibles dans les champs `title` et `resumeSiteWeb`), plutôt qu'aux documents pdf joints (ce qui nécessiterait plus de travail).
