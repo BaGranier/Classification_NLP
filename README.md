@@ -8,7 +8,7 @@ Les publications de la HAS sont catégorisées selon divers thématiques, pour p
 
 Cette catégorisation prend beaucoup de temps aux documentalistes, qui aimeraient automatiser cette tache, en particulier pour les catégorie de la thématique `Maladies et états de santé` qui sont les plus difficiles.
 
-🚀 L'équipe data a proposé d'étudier une fonctionnalité d'assistance à la catégorisation, qui serait intégré à l'interface d'administration du site.
+🚀 L'équipe data a proposé d'étudier une fonctionnalité d'assistance à la catégorisation, qui serait intégrée à l'interface d'administration du site.
 
 ## Exercice
 

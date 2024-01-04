@@ -6,9 +6,9 @@ Note: Ces données ont été extraites grâce à l'API de la HAS, documentée da
 
 ## Thématiques
 
-Les thématiques utilisées sur le site internet de la HAS sont décrites dans le document `documentation/categories_thematiques.xlsx`
+Les thématiques utilisées sur le site internet de la HAS sont décrites dans le document `documentation/categories_thematiques.xlsx`. Elles sont organisées selon une arborescence, que l'on peut reconstruire via l'identifiant du parent. Dans le jeu de données, elles sont décrites dans le champ `categoriesThematiques`.
 
-Elles sont organisées selon une arborescence, que l'on peut reconstruire via l'identifiant du parent.
+**NB:** Attention, dans les données, il existe plus de thématiques que celles décrites dans cette documentation. Il pourra être utile de s'intéresser à un sous groupe de thématiques.
 
 ## Types de contenus
 
@@ -31,4 +31,3 @@ On s'interessera en particulier à catégoriser les documents des types suivants
 ## Contenus
 
 Pour effectuer la classification, on s'intéressera en priorité au résumé markdown ou html des publications, disponible dans le champ `resume` (ou parfois `objectifs`), plutôt qu'aux documents pdf joints (ce qui nécessiterait plus de travail).
-
