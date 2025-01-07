@@ -1,6 +1,12 @@
 ## Accès API
 
-Il est possible d'interroger le backend Jalios par une API, décrite de façon générique dans [ce document](https://community.jalios.com/jcms/jx_59631/fr/services-web-restful-avec-jcms-open-api).
+Il est possible d'interroger le backend Jalios par une API, décrite de façon générique dans [ce document](https://community.jalios.com/jcms/jx_59631/fr/services-web-restful-avec-jcms-open-api) ([version archive publique](https://web.archive.org/web/20220628235317/https://community.jalios.com/jcms/jx_59631/fr/services-web-restful-avec-jcms-open-api)).
+
+La documentation qui suit peut être utilisée par des tiers, pour des cas d'usage en dehors de l'exercice.
+
+La HAS ne garantie aucune stabilité de l'API, qui pourrait évoluer suite à l'évolution du moteur Jalios, ou à long terme pour d'éventuels changement de moteurs.
+
+La HAS ne réalise pas de support sur cette API et cette documentation. 
 
 ### Points d'API
 
@@ -9,10 +15,9 @@ Le principal point d'API utile dans l'exercice est
 - récupérer un objet si le paramètre est un identifiant (exemple https://has-sante.fr/rest/data/p_3240117)
 - récupérer l'ensemble des objets d'un type particulier, si le paramètre est un type de données (exemple https://www.has-sante.fr/rest/data/RecommandationVaccinale)
 
+D'autres points d'API existent non documentés ici.
 
-D'autres points d'API existent, dont certain décrit plus haut, et d'autres a priori inutiles à l'exercices.
-
-On pointer vers une page web ou un document sur le site de la HAS à partir de l'identifiant d'un objet `https://has-sante.fr/jcms/{id}`.
+On peut pointer vers une page web ou un document sur le site de la HAS à partir de l'identifiant d'un objet `https://has-sante.fr/jcms/{id}`.
 
 Exemples 
 - https://has-sante.fr/jcms/p_3240117
