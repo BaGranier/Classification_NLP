@@ -1,0 +1,75 @@
+# =========================
+# Core scientific stack
+# =========================
+numpy==1.26.4
+scipy==1.16.2
+pandas==2.3.3
+scikit-learn==1.7.2
+joblib==1.5.2
+threadpoolctl==3.6.0
+
+# =========================
+# NLP classic
+# =========================
+nltk==3.9.2
+regex==2025.9.18
+beautifulsoup4==4.14.2
+
+# =========================
+# NLP modern / Transformers
+# =========================
+transformers==4.38.2
+tokenizers==0.15.2
+huggingface-hub==0.22.2
+sentencepiece==0.2.1
+safetensors==0.4.3
+datasets==2.18.0
+
+# =========================
+# PyTorch (STABLE CPU)
+# =========================
+torch==2.2.2
+torchvision==0.17.2
+torchtext==0.17.2
+
+# =========================
+# Gradient boosting / HPO
+# =========================
+xgboost==3.0.5
+optuna==4.5.0
+
+# =========================
+# TensorBoard
+# =========================
+tensorboard==2.20.0
+tensorboard-data-server==0.7.2
+protobuf==4.25.3
+
+# =========================
+# Visualization
+# =========================
+matplotlib==3.10.7
+seaborn==0.13.2
+plotly==6.3.1
+
+# =========================
+# Manifold learning / embeddings viz
+# =========================
+umap-learn==0.5.7
+openTSNE==1.0.2
+
+# =========================
+# Utilities
+# =========================
+tqdm==4.67.1
+requests==2.32.5
+pyyaml==6.0.3
+rich==14.2.0
+
+# =========================
+# Jupyter / dev
+# =========================
+ipykernel==7.1.0
+ipython==9.7.0
+jupyter_client==8.6.3
+jupyter_core==5.9.1
