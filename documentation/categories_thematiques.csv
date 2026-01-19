@@ -1,0 +1,259 @@
+﻿ID;Nom;Parent;Parent-ID;Synonymes;Ordre;Nb. fils;Nb. desc.;Nb. Pub.
+c_64654;Maladies et états de santé;Thématique;j_7;;0;26;121;15395
+c_64655;Addictions;Troubles mentaux et comportementaux;c_64700;"Toxicomanie
+Addictions";0;0;0;197
+c_64656;Douleur - Inflammation;Maladies et états de santé;c_64654;"Douleur ? Inflammation
+Inflammation - Douleur";0;0;0;1146
+c_64657;Système immunitaire;Maladies et états de santé;c_64654;;0;4;4;1145
+c_64658;Anatomo-cytopathologie;Techniques et procédures de diagnostic;c_1151639;;0;0;0;37
+c_64659;Anesthésie, sédation, analgésie;Procédures chirurgicales;c_1151644;;0;0;0;293
+c_64660;Biologie;Techniques et procédures de diagnostic;c_1151639;"Biologie
+Analyses médicales";0;0;0;266
+c_64661;Transfusions, transplantations;Diagnostic et traitements;c_64705;;0;0;0;191
+c_64663;C?ur;Maladies et états de santé;c_64654;;0;7;7;1592
+c_64664;Chirurgie digestive et viscérale;Procédures chirurgicales;c_1151644;;2;0;0;144
+c_64665;Chirurgie maxillo-faciale, stomatologie;Procédures chirurgicales;c_1151644;;3;0;0;101
+c_64668;Bouche et dents;Maladies et états de santé;c_64654;;0;4;4;209
+c_64669;Peau et tissu conjonctif;Maladies et états de santé;c_64654;;0;1;1;1220
+c_64670;Diabète;Métabolisme et système endocrinien;c_64671;;1;0;0;469
+c_64671;Métabolisme et système endocrinien;Maladies et états de santé;c_64654;;0;6;6;1284
+c_64672;Appareil digestif;Maladies et états de santé;c_64654;;0;5;5;1487
+c_64673;Personnes âgées;Populations spécifiques;c_1151628;"Personnes âgées
+Gériatrie";0;0;0;680
+c_64674;Appareil génital féminin;Appareil génital;c_1151774;"Appareil génital féminin
+Femme (pathologies génitales)";0;0;0;371
+c_64675;Sang et lymphe;Maladies et états de santé;c_64654;;0;6;6;943
+c_64676;Imagerie médicale;Techniques et procédures de diagnostic;c_1151639;;0;0;0;552
+c_64677;Rééducation et réadaptation;Diagnostic et traitements;c_64705;;0;0;0;173
+c_64678;Maladies génétiques, rares, congénitales;Maladies et états de santé;c_64654;;0;0;0;902
+c_64679;Infections;Maladies et états de santé;c_64654;;0;6;6;2151
+c_64680;Traitement d'urgence et réanimation;Diagnostic et traitements;c_64705;"Traitement d'urgence et réanimation
+Urgences
+Réanimation et traitement d'urgence";0;0;0;191
+c_64682;Expertise légale;Économie et santé publique;c_64710;;0;0;0;53
+c_64683;Aides techniques;Diagnostic et traitements;c_64705;;0;0;0;305
+c_64685;Traitement alternatif;Diagnostic et traitements;c_64705;;0;0;0;77
+c_64686;Rein;Système urinaire;c_64704;;2;0;0;360
+c_64687;Neurochirurgie;Procédures chirurgicales;c_1151644;;11;0;0;114
+c_64688;Système nerveux;Maladies et états de santé;c_64654;;0;6;6;1331
+c_64689;Nutrition, diététique;Diagnostic et traitements;c_64705;;0;0;0;498
+c_64691;?il;Maladies et états de santé;c_64654;;0;1;1;666
+c_64692;Chirurgie orthopédique et traumatologique;Procédures chirurgicales;c_1151644;;5;0;0;471
+c_64695;ORL;Maladies et états de santé;c_64654;;0;6;6;562
+c_64696;Enfants - Adolescents;Populations spécifiques;c_1151628;"Enfants - Adolescents
+Pédiatrie
+Adolescents";0;0;0;2781
+c_64698;Appareil respiratoire;Maladies et états de santé;c_64654;;0;6;6;1253
+c_64699;Articulations et rhumatismes;Appareil locomoteur;c_1151778;"Articulations et rhumatismes
+Rhumatismes et articulations";0;0;0;1007
+c_64700;Troubles mentaux et comportementaux;Maladies et états de santé;c_64654;;0;9;9;1058
+c_64702;Soins palliatifs et fin de vie;Diagnostic et traitements;c_64705;"Soins palliatifs et fin de vie
+Fin de vie et soins palliatifs";0;0;0;54
+c_64704;Système urinaire;Maladies et états de santé;c_64654;;0;7;7;774
+c_64705;Diagnostic et traitements;Thématique;j_7;;2;18;38;14847
+c_64706;Accréditation des médecins;Qualité des soins et de l?accompagnement;c_1234312;;0;21;21;6583
+c_64707;Certification des établissements de santé;Qualité des soins et de l?accompagnement;c_1234312;accréditation des établissements;0;0;0;4163
+c_64708;Qualité et sécurité des soins;Qualité des soins et de l?accompagnement;c_1234312;"Qualité et sécurité des soins
+Sécurité et qualité des soins";0;0;0;1998
+c_64709;Méthodologie;Économie et santé publique;c_64710;;0;0;0;259
+c_64710;Économie et santé publique;Thématique;j_7;;5;8;8;2108
+c_64711;Dépistage, prévention;Économie et santé publique;c_64710;;0;0;0;473
+c_64712;Économie de la santé;Économie et santé publique;c_64710;;0;0;0;616
+c_64713;Education thérapeutique;Diagnostic et traitements;c_64705;;0;0;0;58
+c_64714;Information et droits des usagers;Droits des usagers;c_1151654;"Information et droits des usagers
+Droits et information des usagers";1;0;0;379
+c_64715;Informatique médicale;E-santé;c_2839724;;0;0;0;154
+c_64717;Organisation des soins;Économie et santé publique;c_64710;;0;0;0;829
+c_429236;Dossier du patient;Droits des usagers;c_1151654;;0;0;0;72
+c_435385;Chirurgie cardiaque;Procédures chirurgicales;c_1151644;;1;0;0;159
+c_645734;Intoxications - Iatrogénie;Maladies et états de santé;c_64654;;0;0;0;91
+c_755598;Anesthésie Réanimation;Accréditation des médecins;c_64706;"Anesthésie-réanimation ; Activité de réanimation ; Activité de soins intensifs ;";1;0;0;1097
+c_755599;Cardiologie interventionnelle;Accréditation des médecins;c_64706;Cardiologie (activité interventionnelle);2;0;0;43
+c_755600;Chirurgie maxillo-faciale et stomatologie;Accréditation des médecins;c_64706;"Chirurgie maxillo-faciale et stomatologie ; Chirurgie maxillo-faciale ; Stomatologie (activité chirurgicale)";3;0;0;42
+c_755601;Chirurgie orthopédique et traumatologie;Accréditation des médecins;c_64706;"Chirurgie orthopédique et traumatologie
+chirurgien orthopédiste";4;0;0;1621
+c_755602;Chirurgie plastique, reconstructrice et esthétique;Accréditation des médecins;c_64706;"Chirurgie plastique
+reconstructrice et esthétique";5;0;0;279
+c_755603;Chirurgie thoracique et cardio-vasculaire;Accréditation des médecins;c_64706;Chirurgie thoracique et cardio-vasculaire;6;0;0;204
+c_755604;Chirurgie générale;Accréditation des médecins;c_64706;"Chirurgie générale ;";7;0;0;0
+c_755605;Chirurgie infantile;Accréditation des médecins;c_64706;Chirurgie infantile;8;0;0;50
+c_755606;Chirurgie urologique;Accréditation des médecins;c_64706;Chirurgie urologique;9;0;0;197
+c_755607;Chirurgie vasculaire;Accréditation des médecins;c_64706;Chirurgie vasculaire;10;0;0;299
+c_755608;Chirurgie viscérale et digestive;Accréditation des médecins;c_64706;Chirurgie viscérale et digestive;11;0;0;820
+c_755609;Echographie foetale;Accréditation des médecins;c_64706;"Activité d'échographie obstétricale ; échographie f?tale";12;0;0;20
+c_755610;Gastro-entérologie interventionnelle;Accréditation des médecins;c_64706;Gastro-entérologie (activité interventionnelle);13;0;0;284
+c_755611;Gynécologie Obstétrique;Accréditation des médecins;c_64706;"Gynécologie-obstétrique
+Gynécologie médicale et gynécologie-obstétrique ; Activités d'obstétrique";14;0;0;1226
+c_755612;Neurochirurgie;Accréditation des médecins;c_64706;Neurochirurgie;15;0;0;109
+c_755613;Ophtalmologie chirurgicale;Accréditation des médecins;c_64706;Ophtalmologie (activité chirurgicale);16;0;0;0
+c_755614;ORL - Chirurgie de la face et du cou;Accréditation des médecins;c_64706;"Oto-rhino-laryngologie ; Chirurgie de la face et du cou";17;0;0;11
+c_755615;Pneumologie interventionnelle;Accréditation des médecins;c_64706;Pneumologie (activité interventionnelle).;18;0;0;0
+c_755616;Radiologie interventionnelle;Accréditation des médecins;c_64706;Radiologie (activité interventionnelle);19;0;0;0
+c_755617;Réanimation médicale;Accréditation des médecins;c_64706;"Réanimation médicale ; Activité de réanimation ; Activité de soins intensifs";20;0;0;0
+c_832492;Inter-spécialités;Accréditation des médecins;c_64706;;21;0;0;0
+c_946884;Chirurgie plastique;Procédures chirurgicales;c_1151644;;7;0;0;29
+c_946886;Éthique;Économie et santé publique;c_64710;;0;0;0;108
+c_1005108;Imagerie interventionelle;Diagnostic et traitements;c_64705;;0;0;0;133
+c_1149856;Vaisseaux sanguins;Maladies et états de santé;c_64654;;0;7;7;1615
+c_1150442;Chirurgie vasculaire;Procédures chirurgicales;c_1151644;;10;0;0;103
+c_1151628;Populations spécifiques;Thématique;j_7;;3;4;4;3420
+c_1151629;Secteur social et médico-social;Qualité des soins et de l?accompagnement;c_1234312;;0;0;0;127
+c_1151633;Grossesse et reproduction;Maladies et états de santé;c_64654;;0;4;4;918
+c_1151639;Techniques et procédures de diagnostic;Diagnostic et traitements;c_64705;;0;4;4;880
+c_1151644;Procédures chirurgicales;Diagnostic et traitements;c_64705;;0;14;14;1600
+c_1151654;Droits des usagers;Qualité des soins et de l?accompagnement;c_1234312;;0;2;2;444
+c_1151681;Cancer de l'appareil génital;Appareil génital;c_1151774;;2;0;0;280
+c_1151682;Cancer de l'appareil respiratoire;Appareil respiratoire;c_64698;"Cancer de l'appareil respiratoire
+Voies respiratoires (cancer)";4;0;0;215
+c_1151683;Cancer de l'appareil urinaire;Système urinaire;c_64704;"Cancer de l?appareil urinaire
+Voies urinaires (cancer)";0;0;0;130
+c_1151684;Cancer de la peau et des tissus conjonctifs;Peau et tissu conjonctif;c_64669;;9;0;0;167
+c_1151685;Cancer de l'appareil digestif;Appareil digestif;c_64672;;0;0;0;299
+c_1151686;Cancer de l??il ?il;?il;c_64691;;6;0;0;2
+c_1151687;Cancer des muscles;Appareil locomoteur;c_1151778;;3;0;0;2
+c_1151688;Cancer des os;Appareil locomoteur;c_1151778;;4;0;0;56
+c_1151690;Cancer du sang et lymphe;Sang et lymphe;c_64675;;1;0;0;473
+c_1151691;Cancer du sein;Sein;c_1151794;;11;0;0;309
+c_1151692;Cancer du système nerveux;Système nerveux;c_64688;;0;0;0;76
+c_1151694;Cancer du système endocrinien;Métabolisme et système endocrinien;c_64671;"Cancer du système endocrinien
+Glandes endocrines (cancer)";0;0;0;52
+c_1151695;Cancer ORL;ORL;c_64695;;0;0;0;20
+c_1151761;Handicap;Maladies et états de santé;c_64654;"Personnes handicapées
+Handicap";0;0;0;420
+c_1151762;Bouche;Bouche et dents;c_64668;"Bouche
+Maladies buccales";0;0;0;80
+c_1151763;Mâchoire;Bouche et dents;c_64668;;1;0;0;18
+c_1151764;Dents;Bouche et dents;c_64668;"Dents
+Odontopathies";2;0;0;77
+c_1151765;Cardiopathies ischémiques;C?ur;c_64663;;1;0;0;634
+c_1151766;Cardiopathies congénitales;C?ur;c_64663;"Cardiopathies congénitales
+Malformations cardiaques congénitales";0;0;0;33
+c_1151767;Endocardites;C?ur;c_64663;;2;0;0;3
+c_1151768;Insuffisance cardiaque;C?ur;c_64663;;3;0;0;309
+c_1151769;Rythme cardiaque;C?ur;c_64663;"Rythme cardiaque
+Arythmies";4;0;0;544
+c_1151770;Valvulopathies;C?ur;c_64663;;5;0;0;160
+c_1151771;Foie;Appareil digestif;c_64672;"Foie
+Maladies hépatiques";1;0;0;321
+c_1151772;Pancréas et voies biliaires;Appareil digestif;c_64672;"Pancréas et voies biliaires
+Voies biliaires et pancréas";3;0;0;201
+c_1151773;?sophage, estomac, intestin;Appareil digestif;c_64672;"?sophage
+Estomac
+Intestin";2;0;0;758
+c_1151774;Appareil génital;Maladies et états de santé;c_64654;;0;3;3;737
+c_1151777;Appareil génital masculin;Appareil génital;c_1151774;"Appareil génital masculin
+Homme (pathologies génitales)";1;0;0;166
+c_1151778;Appareil locomoteur;Maladies et états de santé;c_64654;;0;6;6;1846
+c_1151781;Muscles;Appareil locomoteur;c_1151778;;1;0;0;125
+c_1151782;Os et cartilage;Appareil locomoteur;c_1151778;"Os et cartilage
+Cartilage et os";2;0;0;613
+c_1151783;Trachée;Appareil respiratoire;c_64698;;2;0;0;17
+c_1151784;Bronches;Appareil respiratoire;c_64698;;0;0;0;456
+c_1151785;Poumon et plèvre;Appareil respiratoire;c_64698;;1;0;0;776
+c_1151786;Troubles respiratoires;Appareil respiratoire;c_64698;;3;0;0;276
+c_1151788;Anémie et hémoglobinopathies;Sang et lymphe;c_64675;;0;0;0;115
+c_1151789;Moelle osseuse;Sang et lymphe;c_64675;;3;0;0;67
+c_1151791;Système lymphatique;Sang et lymphe;c_64675;;4;0;0;27
+c_1151792;Hémostase et coagulation;Sang et lymphe;c_64675;"Hémostase et coagulation
+Coagulation et hémostase";2;0;0;284
+c_1151794;Sein;Maladies et états de santé;c_64654;;0;1;1;321
+c_1151795;Allergies;Système immunitaire;c_64657;;0;0;0;250
+c_1151796;Déficits immunitaires;Système immunitaire;c_64657;;1;0;0;313
+c_1151797;Maladies auto-immunes;Système immunitaire;c_64657;;2;0;0;573
+c_1151798;Myéline;Système nerveux;c_64688;;3;0;0;115
+c_1151799;Système nerveux central;Système nerveux;c_64688;;4;0;0;1042
+c_1151800;Maladies neurodégénératives;Système nerveux;c_64688;;1;0;0;275
+c_1151801;Maladies neuromusculaires;Système nerveux;c_64688;;2;0;0;155
+c_1151802;Système endocrinien;Métabolisme et système endocrinien;c_64671;;4;0;0;285
+c_1151803;Métabolisme;Métabolisme et système endocrinien;c_64671;;2;0;0;437
+c_1151804;Obésité;Métabolisme et système endocrinien;c_64671;;3;0;0;91
+c_1151805;Bactéries;Infections;c_64679;"Bactéries
+Infections bactériennes";0;0;0;902
+c_1151806;Parasites et mycoses;Infections;c_64679;"Parasites et mycoses
+Infections parasitaires et mycoses
+Mycoses et parasites";3;0;0;319
+c_1151807;Virus;Infections;c_64679;"Infections virales
+Virus";4;0;0;953
+c_1151808;Infections sexuellement transmissibles;Infections;c_64679;"Infections sexuellement transmissibles
+IST
+MST";2;0;0;433
+c_1151809;Oreilles;ORL;c_64695;;3;0;0;239
+c_1151811;Larynx;ORL;c_64695;;1;0;0;31
+c_1151813;Nez et sinus;ORL;c_64695;"Nez et sinus
+Sinus et nez";2;0;0;228
+c_1151814;Pharynx;ORL;c_64695;;4;0;0;94
+c_1151817;Vessie;Système urinaire;c_64704;;5;0;0;56
+c_1151818;Urètre;Système urinaire;c_64704;;4;0;0;32
+c_1151819;Uretère;Système urinaire;c_64704;;3;0;0;16
+c_1151820;Miction;Système urinaire;c_64704;;1;0;0;168
+c_1151821;Anévrysmes et malformations vasculaires;Vaisseaux sanguins;c_1149856;;0;0;0;200
+c_1151822;Embolies, thromboses et sténoses;Vaisseaux sanguins;c_1149856;"Embolies
+Thromboses
+Sténoses";2;0;0;369
+c_1151823;Hypertension artérielle;Vaisseaux sanguins;c_1149856;;3;0;0;549
+c_1151828;Aorte;Vaisseaux sanguins;c_1149856;;1;0;0;221
+c_1151829;Vaisseaux périphériques;Vaisseaux sanguins;c_1149856;"Vaisseaux périphériques
+Angiopathies périphériques";5;0;0;286
+c_1151830;Troubles cérébrovasculaires;Vaisseaux sanguins;c_1149856;;4;0;0;273
+c_1151831;Perte de conscience;Maladies et états de santé;c_64654;;0;0;0;13
+c_1151832;Alzheimer et troubles cognitifs;Troubles mentaux et comportementaux;c_64700;"Alzheimer et troubles cognitifs
+Troubles cognitifs et Alzheimer";2;0;0;181
+c_1151833;Dépression et troubles de l'humeur;Troubles mentaux et comportementaux;c_64700;"Dépression et troubles de l?humeur
+Troubles de l'humeur et dépression";4;0;0;226
+c_1151835;Schizophrénie et troubles délirants;Troubles mentaux et comportementaux;c_64700;"Schizophrénie et troubles délirants
+Troubles délirants et schizophrénie";5;0;0;135
+c_1151836;Alimentation et sommeil;Troubles mentaux et comportementaux;c_64700;"Alimentation et sommeil
+Sommeil et alimentation";1;0;0;168
+c_1151837;Anxiété et névroses;Troubles mentaux et comportementaux;c_64700;"Anxiété et névroses
+Névroses et anxiété";3;0;0;154
+c_1151838;Troubles personnalité et comportement adulte;Troubles mentaux et comportementaux;c_64700;;7;0;0;63
+c_1151840;Troubles neurodéveloppementaux;Troubles mentaux et comportementaux;c_64700;;6;0;0;118
+c_1151841;Contraception, IVG et stérilisation;Grossesse et reproduction;c_1151633;;0;0;0;227
+c_1151842;Infertilité et assistance médicale à la procréation;Grossesse et reproduction;c_1151633;"Assistance médicale à la procréation et infertilité
+Infertilité et assistance médicale à la procréation";0;0;0;104
+c_1151845;Grossesse;Grossesse et reproduction;c_1151633;;0;0;0;402
+c_1151849;Ménopause, andropause;Grossesse et reproduction;c_1151633;"Ménopause
+Andropause";0;0;0;232
+c_1151855;Psychothérapies;Diagnostic et traitements;c_64705;;0;0;0;30
+c_1151856;Radiothérapie et autres agents physiques;Diagnostic et traitements;c_64705;;0;0;0;103
+c_1151857;Traitement médicamenteux;Diagnostic et traitements;c_64705;;0;0;0;10625
+c_1151858;Télémédecine;E-santé;c_2839724;;0;0;0;142
+c_1151859;Visite médicale;Économie et santé publique;c_64710;"Visite médicale
+Information promotionnelle";1;0;0;24
+c_1151890;Chirurgie ophtalmologique;Procédures chirurgicales;c_1151644;;4;0;0;47
+c_1151891;Procédures opératoires;Procédures chirurgicales;c_1151644;;12;0;0;111
+c_1151892;Chirurgie urogénitale;Procédures chirurgicales;c_1151644;;9;0;0;67
+c_1151893;Chirurgie pulmonaire;Procédures chirurgicales;c_1151644;;8;0;0;9
+c_1151894;Chirurgie ORL;Procédures chirurgicales;c_1151644;;6;0;0;29
+c_1213255;Procédures à visée reconstructrice et esthétique;Diagnostic et traitements;c_64705;;0;0;0;20
+c_1213256;Prothèses et implants;Diagnostic et traitements;c_64705;"Prothèses et implants
+Implants et prothèses";0;0;0;1810
+c_1213258;Santé au travail;Économie et santé publique;c_64710;"Santé au travail
+Médecine du travail";0;0;0;64
+c_1218060;Autres procédures chirurgicales;Procédures chirurgicales;c_1151644;;13;0;0;110
+c_1218063;Techniques et procédures de diagnostic - divers;Techniques et procédures de diagnostic;c_1151639;;0;0;0;56
+c_1218066;Cancers - divers;Maladies et états de santé;c_64654;;13;0;0;274
+c_1218070;Maladies bucco-dentaires - divers;Bouche et dents;c_64668;;3;0;0;56
+c_1218072;Cardiopathies - divers;C?ur;c_64663;;6;0;0;114
+c_1218074;Maladies digestives - divers;Appareil digestif;c_64672;;4;0;0;78
+c_1218078;Maladies de l'appareil locomoteur - divers;Appareil locomoteur;c_1151778;;5;0;0;287
+c_1218080;Maladies respiratoires - divers;Appareil respiratoire;c_64698;;5;0;0;51
+c_1218082;Maladies sang et lymphe - divers;Sang et lymphe;c_64675;;5;0;0;57
+c_1218084;Maladies immunitaires - divers;Système immunitaire;c_64657;;3;0;0;25
+c_1218086;Maladies système nerveux - divers;Système nerveux;c_64688;;5;0;0;88
+c_1218088;Maladies endocriniennes et métaboliques - divers;Métabolisme et système endocrinien;c_64671;;5;0;0;7
+c_1218090;Maladies infectieuses - divers;Infections;c_64679;;5;0;0;97
+c_1218092;Maladies ORL - divers;ORL;c_64695;;5;0;0;29
+c_1218094;Maladies urologiques - divers;Système urinaire;c_64704;;6;0;0;66
+c_1218096;Maladies vasculaires - divers;Vaisseaux sanguins;c_1149856;;6;0;0;80
+c_1218098;Troubles mentaux et comportementaux - divers;Troubles mentaux et comportementaux;c_64700;;8;0;0;79
+c_1218100;Indicateurs;Qualité des soins et de l?accompagnement;c_1234312;;0;0;0;402
+c_1234312;Qualité des soins et de l?accompagnement;Thématique;j_7;;8;6;29;12746
+c_2616939;Vaccins;Diagnostic et traitements;c_64705;;0;0;0;387
+c_2839723;Perte d?autonomie;Maladies et états de santé;c_64654;;0;0;0;12
+c_2839724;E-santé;Diagnostic et traitements;c_64705;;0;2;2;294
+c_2839727;Aidants;Populations spécifiques;c_1151628;"Aidants
+Proches aidants";0;0;0;6
+c_2839732;Inclusion sociale;Populations spécifiques;c_1151628;;0;0;0;27
+p_3203414;COVID-19;Infections;c_64679;"SARS-CoV-2
+COVID-19";1;0;0;218

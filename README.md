@@ -1,44 +1,119 @@
-# Exercice NLP
+# Classification de textes médicaux avec NLP classique et embeddings Transformers
 
-Ce dépôt propose un exercice ouvert de traitement du langage naturel (NLP), à partir d'un problème fictif sur les publications de la HAS.
+## Présentation générale
 
-## Problématique métier (FICTIVE !)
+Ce notebook explore différentes approches pour la classification multi-classes de courts textes médicaux en français (titre + résumé).  
+L’objectif est de comparer des méthodes classiques de traitement automatique du langage (Bag of Words / TF-IDF) avec des représentations modernes basées sur des modèles Transformers, et d’analyser leurs forces et limites sur une tâche de classification sémantique difficile comportant une vingtaine de classes.
 
-Les publications de la HAS sont catégorisées selon divers thématiques, pour permettre la navigation sur le site internet.
+Le notebook suit une démarche expérimentale progressive et contrôlée :
+- Représentations NLP classiques (TF-IDF / Bag of Words)
+- Embeddings génériques CamemBERT (pooling CLS et mean)
+- Classifieurs linéaires et non linéaires
+- Visualisation qualitative des espaces d’embedding avec UMAP
 
-Cette catégorisation prend beaucoup de temps aux documentalistes, qui aimeraient automatiser cette tache, en particulier pour les catégorie de la thématique `Maladies et états de santé` qui sont les plus difficiles.
+---
 
-🚀 L'équipe data a proposé d'étudier une fonctionnalité d'assistance à la catégorisation, qui serait intégrée à l'interface d'administration du site.
+## Structure du notebook
 
-## Exercice
+Le notebook est organisé en plusieurs sections principales :
 
-L'exercice consiste à travailler sur cette fonctionnalité d'assistance fictive.
+1. **Imports et configuration**  
+   - Import des bibliothèques  
+   - Fixation des graines aléatoires  
+   - Configuration CPU / GPU
 
-Différentes étapes pourront être développées :
-- Décrire la démarche de travail
-- Acquisition et nettoyage des données
-- Définition de métrique de succès
-- Entraînement de modèles 
-- Restitution des résultats
-- Description du fonctionnement et de l'architecture de la solution envisagée en production
+2. **Chargement et préparation des données**  
+   - Chargement du jeu de données annoté  
+   - Séparation entraînement / test  
+   - Prétraitement des champs titre + résumé
 
-## En pratique
+3. **Modèles de base (Bag of Words / TF-IDF)**  
+   - Vectorisation TF-IDF  
+   - Classifieur Logistic Regression  
+   - Évaluation en F1 macro  
+   - Matrice de confusion
 
-Une documentation sur les données et catégories est disponible dans le dossier `documentation`.
+4. **Embeddings CamemBERT (Transformer générique)**  
+   - Pooling CLS  
+   - Pooling par moyenne des jetons (mean pooling)  
+   - Classifieur Logistic Regression  
+   - Comparaison des performances  
+   - Matrices de confusion
 
-L'exercice sera développé sur un clone personnel de ce dépôt.
+5. **Discussion et limites**  
+   - Représentation vs capacité du classifieur  
+   - Chevauchement sémantique entre classes  
+   - Limites des embeddings génériques  
+   - Caractère stochastique d’UMAP
 
-- Les documents descriptifs seront rédigé au format Markdown.
-- Le principal langage à utiliser est Python pour le traitement de données. Les codes seront versionnés dans le dépôt (librairie `.py` et/ou notebook `.ipynb`).
-- Les résultats pourront être présentés dans des notebooks, ou autre format de restitution au choix.
-- La gestion des données utilisées et modèles est laissée libre.
+---
 
-## Disclaimer
+## Résultats principaux
 
-Ce problème est potentiellement difficile et chronophage. 
+- Les représentations Bag of Words et TF-IDF fournissent de bonnes bases de comparaison, mais échouent à capturer la structure sémantique profonde des textes.
+- Les embeddings CamemBERT génériques, en particulier avec pooling CLS, sont sous-optimaux en l’absence de fine-tuning.
+- Le pooling par moyenne des jetons améliore la stabilité et les performances par rapport au pooling CLS.
+- Le passage d’un classifieur linéaire (Logistic Regression) à un classifieur non linéaire (XGBoost) n’apporte qu’un gain marginal, ce qui indique que la principale limite provient de la représentation plutôt que du modèle de décision.
+- Les visualisations UMAP montrent des amas sémantiques cohérents mais un fort chevauchement entre certaines classes médicales proches, ce qui explique les confusions observées.
 
-Nous **n'attendons pas** de solution complète ou très performante.
+---
 
-Il sera bienvenu de simplifier le problème, pour s'attacher à un sous-problème plus simple.
+## Temps d’exécution
 
-Nous nous intéresserons à la démarche générale, aux compétences techniques et scientifiques sur le traitements de données et l'usage de librairies de NLP.
+⏱️ **Temps d’exécution total : ~20 à 50 minutes**
+
+La parties la plus coûteuse est le calcul des embeddings Transformers  
+
+---
+
+## Dépendances
+
+Les principales bibliothèques utilisées sont :
+- numpy, pandas, scikit-learn  
+- torch, transformers, sentence-transformers  
+- umap-learn  
+- matplotlib, seaborn  
+
+Un fichier `requirements_NLP.txt` est fourni pour recréer l’environnement.
+
+### Création de l’environnement Conda
+
+```bash
+conda create -n torch_NLP python=3.12
+conda activate torch_NLP
+pip install -r requirements_NLP.txt
+```
+
+---
+
+## Reproductibilité
+
+Pour garantir la reproductibilité :
+- des graines aléatoires sont fixées pour NumPy, PyTorch et scikit-learn  
+- les séparations train / test sont figées  
+- les hyperparamètres des modèles sont conservés constants lors des comparaisons
+
+---
+
+## Remarques méthodologiques importantes
+
+- Les visualisations UMAP et t-SNE sont utilisées uniquement à des fins exploratoires et qualitatives.  
+  Elles ne constituent pas une preuve quantitative de séparabilité des classes.
+- Les comparaisons entre modèles sont effectuées à représentation fixe et métrique fixe (F1 macro).
+- Les résultats négatifs (absence de gain avec XGBoost) sont volontairement conservés et discutés.
+
+---
+
+## Conclusion
+
+Ce notebook met en évidence que, pour des tâches de classification sémantique fines sur des textes médicaux courts :
+- la qualité de la représentation est le principal facteur limitant,
+- les embeddings de phrases entraînés en contrastif sont nettement plus adaptés que les embeddings génériques de type MLM,
+- les classifieurs plus complexes ne compensent pas un manque de séparabilité sémantique intrinsèque.
+
+---
+
+## Auteur
+
+Baptiste Granier  
+IODAA - AgroParisTech et AMI2B – Université Paris-Saclay  
